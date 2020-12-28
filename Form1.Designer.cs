@@ -68,6 +68,24 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.employeeTerritoriesDataGridView = new System.Windows.Forms.DataGridView();
+            this.employeeIDTextBox = new System.Windows.Forms.TextBox();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.titleOfCourtesyTextBox = new System.Windows.Forms.TextBox();
+            this.birthDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.hireDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.cityTextBox = new System.Windows.Forms.TextBox();
+            this.regionTextBox = new System.Windows.Forms.TextBox();
+            this.postalCodeTextBox = new System.Windows.Forms.TextBox();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.homePhoneTextBox = new System.Windows.Forms.TextBox();
+            this.extensionTextBox = new System.Windows.Forms.TextBox();
+            this.photoPictureBox = new System.Windows.Forms.PictureBox();
+            this.notesTextBox = new System.Windows.Forms.TextBox();
+            this.reportsToTextBox = new System.Windows.Forms.TextBox();
+            this.photoPathTextBox = new System.Windows.Forms.TextBox();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwndDataSet = new Kr_DB.northwndDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,24 +112,6 @@
             this.employeesTableAdapter = new Kr_DB.northwndDataSetTableAdapters.EmployeesTableAdapter();
             this.tableAdapterManager = new Kr_DB.northwndDataSetTableAdapters.TableAdapterManager();
             this.employeeTerritoriesTableAdapter = new Kr_DB.northwndDataSetTableAdapters.EmployeeTerritoriesTableAdapter();
-            this.employeeIDTextBox = new System.Windows.Forms.TextBox();
-            this.lastNameTextBox = new System.Windows.Forms.TextBox();
-            this.firstNameTextBox = new System.Windows.Forms.TextBox();
-            this.titleTextBox = new System.Windows.Forms.TextBox();
-            this.titleOfCourtesyTextBox = new System.Windows.Forms.TextBox();
-            this.birthDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.hireDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.cityTextBox = new System.Windows.Forms.TextBox();
-            this.regionTextBox = new System.Windows.Forms.TextBox();
-            this.postalCodeTextBox = new System.Windows.Forms.TextBox();
-            this.countryTextBox = new System.Windows.Forms.TextBox();
-            this.homePhoneTextBox = new System.Windows.Forms.TextBox();
-            this.extensionTextBox = new System.Windows.Forms.TextBox();
-            this.photoPictureBox = new System.Windows.Forms.PictureBox();
-            this.notesTextBox = new System.Windows.Forms.TextBox();
-            this.reportsToTextBox = new System.Windows.Forms.TextBox();
-            this.photoPathTextBox = new System.Windows.Forms.TextBox();
             employeeIDLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
             firstNameLabel = new System.Windows.Forms.Label();
@@ -138,10 +138,10 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeTerritoriesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwndDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeTerritoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -246,7 +246,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 21);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -351,7 +350,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(695, 544);
+            this.tabPage2.Size = new System.Drawing.Size(714, 544);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "EmployeeTerritories";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -367,188 +366,8 @@
             this.employeeTerritoriesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.employeeTerritoriesDataGridView.Location = new System.Drawing.Point(3, 3);
             this.employeeTerritoriesDataGridView.Name = "employeeTerritoriesDataGridView";
-            this.employeeTerritoriesDataGridView.Size = new System.Drawing.Size(689, 538);
+            this.employeeTerritoriesDataGridView.Size = new System.Drawing.Size(708, 538);
             this.employeeTerritoriesDataGridView.TabIndex = 0;
-            // 
-            // employeesBindingSource
-            // 
-            this.employeesBindingSource.DataMember = "Employees";
-            this.employeesBindingSource.DataSource = this.northwndDataSet;
-            // 
-            // northwndDataSet
-            // 
-            this.northwndDataSet.DataSetName = "northwndDataSet";
-            this.northwndDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "EmployeeID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "EmployeeID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 89;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "LastName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "LastName";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "FirstName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "FirstName";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 79;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Title";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Title";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 52;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "TitleOfCourtesy";
-            this.dataGridViewTextBoxColumn5.HeaderText = "TitleOfCourtesy";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 104;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "BirthDate";
-            this.dataGridViewTextBoxColumn6.HeaderText = "BirthDate";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 76;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "HireDate";
-            this.dataGridViewTextBoxColumn7.HeaderText = "HireDate";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 74;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 70;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "City";
-            this.dataGridViewTextBoxColumn9.HeaderText = "City";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 49;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Region";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Region";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 66;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "PostalCode";
-            this.dataGridViewTextBoxColumn11.HeaderText = "PostalCode";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 86;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Country";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Country";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 68;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "HomePhone";
-            this.dataGridViewTextBoxColumn13.HeaderText = "HomePhone";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 91;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Extension";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Extension";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 78;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.DataPropertyName = "Photo";
-            this.dataGridViewImageColumn1.HeaderText = "Photo";
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 41;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Notes";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Notes";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 60;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "ReportsTo";
-            this.dataGridViewTextBoxColumn16.HeaderText = "ReportsTo";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "PhotoPath";
-            this.dataGridViewTextBoxColumn17.HeaderText = "PhotoPath";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "EmployeeID";
-            this.dataGridViewTextBoxColumn18.HeaderText = "EmployeeID";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "TerritoryID";
-            this.dataGridViewTextBoxColumn19.HeaderText = "TerritoryID";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // employeeTerritoriesBindingSource
-            // 
-            this.employeeTerritoriesBindingSource.DataMember = "EmployeeTerritories";
-            this.employeeTerritoriesBindingSource.DataSource = this.northwndDataSet;
-            // 
-            // employeesTableAdapter
-            // 
-            this.employeesTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CategoriesTableAdapter = null;
-            this.tableAdapterManager.CustomerCustomerDemoTableAdapter = null;
-            this.tableAdapterManager.CustomerDemographicsTableAdapter = null;
-            this.tableAdapterManager.CustomersTableAdapter = null;
-            this.tableAdapterManager.EmployeesTableAdapter = this.employeesTableAdapter;
-            this.tableAdapterManager.EmployeeTerritoriesTableAdapter = null;
-            this.tableAdapterManager.Order_DetailsTableAdapter = null;
-            this.tableAdapterManager.OrdersTableAdapter = null;
-            this.tableAdapterManager.ProductsTableAdapter = null;
-            this.tableAdapterManager.RegionTableAdapter = null;
-            this.tableAdapterManager.ShippersTableAdapter = null;
-            this.tableAdapterManager.SuppliersTableAdapter = null;
-            this.tableAdapterManager.TerritoriesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Kr_DB.northwndDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // employeeTerritoriesTableAdapter
-            // 
-            this.employeeTerritoriesTableAdapter.ClearBeforeFill = true;
             // 
             // employeeIDLabel
             // 
@@ -858,6 +677,186 @@
             this.photoPathTextBox.Size = new System.Drawing.Size(136, 20);
             this.photoPathTextBox.TabIndex = 36;
             // 
+            // employeesBindingSource
+            // 
+            this.employeesBindingSource.DataMember = "Employees";
+            this.employeesBindingSource.DataSource = this.northwndDataSet;
+            // 
+            // northwndDataSet
+            // 
+            this.northwndDataSet.DataSetName = "northwndDataSet";
+            this.northwndDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "EmployeeID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "EmployeeID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 89;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "LastName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "LastName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "FirstName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "FirstName";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 79;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Title";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Title";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 52;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "TitleOfCourtesy";
+            this.dataGridViewTextBoxColumn5.HeaderText = "TitleOfCourtesy";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 104;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "BirthDate";
+            this.dataGridViewTextBoxColumn6.HeaderText = "BirthDate";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 76;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "HireDate";
+            this.dataGridViewTextBoxColumn7.HeaderText = "HireDate";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 74;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "City";
+            this.dataGridViewTextBoxColumn9.HeaderText = "City";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 49;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Region";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Region";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 66;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "PostalCode";
+            this.dataGridViewTextBoxColumn11.HeaderText = "PostalCode";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 86;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Country";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Country";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 68;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "HomePhone";
+            this.dataGridViewTextBoxColumn13.HeaderText = "HomePhone";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 91;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Extension";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Extension";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 78;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.DataPropertyName = "Photo";
+            this.dataGridViewImageColumn1.HeaderText = "Photo";
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 41;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Notes";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Notes";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "ReportsTo";
+            this.dataGridViewTextBoxColumn16.HeaderText = "ReportsTo";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 82;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "PhotoPath";
+            this.dataGridViewTextBoxColumn17.HeaderText = "PhotoPath";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 82;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "EmployeeID";
+            this.dataGridViewTextBoxColumn18.HeaderText = "EmployeeID";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "TerritoryID";
+            this.dataGridViewTextBoxColumn19.HeaderText = "TerritoryID";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // employeeTerritoriesBindingSource
+            // 
+            this.employeeTerritoriesBindingSource.DataMember = "EmployeeTerritories";
+            this.employeeTerritoriesBindingSource.DataSource = this.northwndDataSet;
+            // 
+            // employeesTableAdapter
+            // 
+            this.employeesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.CustomerCustomerDemoTableAdapter = null;
+            this.tableAdapterManager.CustomerDemographicsTableAdapter = null;
+            this.tableAdapterManager.CustomersTableAdapter = null;
+            this.tableAdapterManager.EmployeesTableAdapter = this.employeesTableAdapter;
+            this.tableAdapterManager.EmployeeTerritoriesTableAdapter = null;
+            this.tableAdapterManager.Order_DetailsTableAdapter = null;
+            this.tableAdapterManager.OrdersTableAdapter = null;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.RegionTableAdapter = null;
+            this.tableAdapterManager.ShippersTableAdapter = null;
+            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.TerritoriesTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Kr_DB.northwndDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // employeeTerritoriesTableAdapter
+            // 
+            this.employeeTerritoriesTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -901,8 +900,9 @@
             this.Controls.Add(photoPathLabel);
             this.Controls.Add(this.photoPathTextBox);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Accounting of personnel";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -916,10 +916,10 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.employeeTerritoriesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwndDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeTerritoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

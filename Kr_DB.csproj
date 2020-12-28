@@ -113,6 +113,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Icons\3592856-general-group-office-personal-relation-team-team-structure_107770.ico" />
+    <Content Include="Icons\account_key_icon_137994.ico" />
     <Content Include="northwnd.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
